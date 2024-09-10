@@ -1,0 +1,12 @@
+<div class="column gap-1 wrapper">
+    <img [src]="product.image"
+         alt="Product">
+    <h2 class="title">{{product.name}}</h2>
+    <div class="row">
+        <span class="price-label">Price : </span>
+        <span class="price">{{product.price}}</span>
+        <p-rating [(ngModel)]="product.rating"
+                  [cancel]="false"
+                  [readonly]="true" />
+    </div>
+</div>
