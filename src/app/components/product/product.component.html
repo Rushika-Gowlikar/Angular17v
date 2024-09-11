@@ -9,4 +9,16 @@
                   [cancel]="false"
                   [readonly]="true" />
     </div>
+    <div class="row">
+        <button type="button"
+                pButton
+                icon="pi pi-pencil"
+                (click)="editProduct()"
+                label="Edit"></button>
+        <button type="button"
+                pButton
+                icon="pi pi-trash"
+                (click)="deleteProduct()"
+                label="Delete"></button>
+    </div>
 </div>
